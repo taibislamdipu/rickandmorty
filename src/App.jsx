@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import preLoader from "./assets/loading.gif";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     // Simulating a 3s loading time
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       {isLoading ? (
-        <div className="bg-white flex items-center justify-center h-screen">
+        <div className="flex h-screen items-center justify-center bg-white">
           <img src={preLoader} alt="...loading"></img>
         </div>
       ) : (

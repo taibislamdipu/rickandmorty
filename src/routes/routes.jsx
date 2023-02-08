@@ -1,30 +1,34 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../layout/Main";
 import About from "../pages/About";
+import Cast from "../pages/Cast/Cast";
+import CastDetails from "../pages/CastDetails/CastDetails";
 import Contact from "../pages/Contact";
-import Home from "../pages/home/Home";
+import Home from "../pages/Home/Home";
 import NotFoundPage from "../pages/NotFoundPage";
 
 const routes = createBrowserRouter([
   {
     path: "/",
-    element: <Main />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-    ],
+    element: <Home />,
+  },
+  {
+    path: "/home",
+    element: <Home />,
   },
 
+  {
+    path: "/cast",
+    element: <Cast />,
+  },
+  {
+    path: "/cast",
+    element: <Cast />,
+  },
+  {
+    path: "/cast-details/:id",
+    element: <CastDetails />,
+  },
   {
     path: "*",
     element: <NotFoundPage />,

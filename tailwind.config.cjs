@@ -7,9 +7,14 @@ module.exports = {
       md: "768px",
       lg: "1024px",
       xl: "1280px",
-      "2xl": "1536px",
+      "2xl": "1920px",
     },
     extend: {
+      colors: {
+        primary: "#191D29",
+        secondary: "#9DFE00",
+        thirdColor: "#14D9E5",
+      },
       fontFamily: {
         bodyFont: ["TTTravels", "Sans Serif"],
       },

@@ -7,6 +7,31 @@
   src: url("../src/assets/fonts/TTTravels-Regular.ttf");
 }
 
+@layer base {
+  body {
+    @apply bg-primary text-white;
+  }
+
+  h1 {
+    @apply text-[40px] font-bold md:text-[128px];
+  }
+  h2 {
+    @apply text-[20px] md:text-[24px];
+  }
+  h3 {
+    @apply text-[16px] md:text-[20px];
+  }
+  h4 {
+    @apply text-[12px] md:text-[16px];
+  }
+  h5 {
+    @apply text-[10px] md:text-[14px];
+  }
+  h6 {
+    @apply text-[8px];
+  }
+}
+
 .scroll-to-top {
   padding: 5px !important;
 }
