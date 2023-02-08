@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scroll-to-top {
+  padding: 5px !important;
+}
+
+.test {
+  @apply bg-red-500;
+}
+
+.testb {
+  @apply border border-red-500;
+}
