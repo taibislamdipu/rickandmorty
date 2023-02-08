@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "TTTravels";
+  src: url("../src/assets/fonts/TTTravels-Regular.ttf");
+}
+
 .scroll-to-top {
   padding: 5px !important;
 }
