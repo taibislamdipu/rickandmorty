@@ -4,3 +4,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.top-left {
+  background-image: url("../../assets/home-page/hero-elements/bubble.png");
+  background-position: center;
+}
