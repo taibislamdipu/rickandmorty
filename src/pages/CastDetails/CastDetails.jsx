@@ -5,9 +5,11 @@ import { useParams } from "react-router-dom";
 import Navbar from "../../layout/Navbar";
 import statusImg from "../../assets/cast-details/icons/status.png";
 import { BiLinkExternal } from "react-icons/bi";
+import Loading from "../../Components/reusable/Loading";
 
 const CastDetails = () => {
   const [casts, setCasts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const { id } = useParams();
 
   const { status, episode } = casts;
@@ -42,6 +44,7 @@ const CastDetails = () => {
       .get(`https://rickandmortyapi.com/api/character/${id}`)
       .then((res) => {
         setCasts(res?.data);
+        setIsLoading(false);
       })
       .catch((err) => {
         console.error(err);
@@ -51,6 +54,7 @@ const CastDetails = () => {
   return (
     <div className="castDetails-container h-screen">
       <Navbar />
+      <div>{isLoading && <Loading />}</div>
       <main className="container mx-auto grid grid-cols-2 gap-10">
         <div className="col-span-1 flex flex-col items-center justify-center">
           <h3 className="text-[40px] text-thirdColor">{casts?.name}</h3>
