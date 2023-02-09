@@ -14,7 +14,6 @@ module.exports = {
         primary: "#191D29",
         secondary: "#9DFE00",
         thirdColor: "#14D9E5",
-        blur: "#292C38",
       },
       fontFamily: {
         bodyFont: ["TTTravels", "Sans Serif"],

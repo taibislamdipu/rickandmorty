@@ -17,24 +17,55 @@ const Episodes = () => {
       });
   }, []);
 
-  const settings = {
+  // const settings = {
+  //   // dots: true,
+  //   // infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 4.5,
+  //   slidesToScroll: 3,
+  //   // autoplay: true,
+  // };
+
+  const [sliderSettings, setSliderSettings] = useState({
+    slidesToShow: 4.5,
+    slidesToScroll: 4,
+    infinite: false,
+    initialSlide: 0,
     // dots: true,
-    // infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    // autoplay: true,
-  };
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3.5,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2.5,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1.5,
+        },
+      },
+    ],
+  });
 
   return (
-    <div className="container mx-auto">
+    <div className="mx-4 space-y-4 md:mx-20">
       <h3>Episodes</h3>
-      <Slider {...settings}>
+      <Slider {...sliderSettings}>
         {episodes.map((episode) => (
-          <div key={episode?.id}>
-            <div className="episode-card rounded-xl border border-green-400 bg-blur p-6">
-              <h5>{episode?.episode}</h5>
-              <h4 className="font-bold">{episode?.name}</h4>
+          <div>
+            <div key={episode?.id}>
+              <div className="episode-card rounded-xl border border-green-400 bg-blur p-6">
+                <h5>{episode?.episode}</h5>
+                <h4 className="font-bold">{episode?.name}</h4>
+              </div>
             </div>
           </div>
         ))}

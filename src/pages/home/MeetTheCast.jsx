@@ -7,14 +7,34 @@ import CastCard from "../../Components/reusable/CastCard/CastCard";
 const MeetTheCast = () => {
   const [casts, setCasts] = useState([]);
 
-  const settings = {
+  const [sliderSettings, setSliderSettings] = useState({
+    slidesToShow: 4.5,
+    slidesToScroll: 4,
+    infinite: false,
+    initialSlide: 0,
     // dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 3,
-    autoplay: true,
-  };
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3.5,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2.5,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1.5,
+        },
+      },
+    ],
+  });
 
   useEffect(() => {
     axios
@@ -28,7 +48,7 @@ const MeetTheCast = () => {
   }, []);
 
   return (
-    <div className="container mx-auto">
+    <div className="mx-4 space-y-4 md:mx-20">
       <div className="flex items-center justify-between">
         <h3>Meet The Cast</h3>
         <Link to="/cast">
@@ -36,7 +56,7 @@ const MeetTheCast = () => {
         </Link>
       </div>
       <div>
-        <Slider {...settings}>
+        <Slider {...sliderSettings}>
           {casts.map((cast) => (
             <CastCard key={cast?.id} cast={cast} />
           ))}

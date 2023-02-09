@@ -1,11 +1,21 @@
 .home-container {
-  background-image: url("../../assets/home/home-bg.png");
+  background-image: url("../../assets/home-page/background-elements/home-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.top-left {
+/* .top-left {
   background-image: url("../../assets/home-page/hero-elements/bubble.png");
   background-position: center;
+} */
+
+.text::before {
+  content: "The";
+  background-image: url("../../assets/home-page/hero-elements/bubble.png");
+  background-repeat: no-repeat;
+  padding-left: 80px;
+}
+.portal::after {
+  content: "sssss";
 }
