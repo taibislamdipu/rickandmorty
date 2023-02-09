@@ -22,10 +22,6 @@ const routes = createBrowserRouter([
     element: <Cast />,
   },
   {
-    path: "/cast",
-    element: <Cast />,
-  },
-  {
     path: "/cast-details/:id",
     element: <CastDetails />,
   },

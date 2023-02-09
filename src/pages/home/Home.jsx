@@ -2,12 +2,14 @@ import React from "react";
 import "./Home.css";
 import Navbar from "../../layout/Navbar";
 import MeetTheCast from "./MeetTheCast";
+import Episodes from "./Episodes";
+import Locations from "./Locations";
 
 const Home = () => {
   return (
     <div className="home-container h-max">
       <Navbar />
-      <section className="container mx-auto text-center">
+      <section className="text-center">
         <h1 className="font-bodyFont uppercase">
           <span className="italic">The</span> Rick & Morty{" "}
           <span className="italic">Wiki</span>
@@ -21,8 +23,10 @@ const Home = () => {
           </p>
         </div>
       </section>
-      <section>
+      <section className="space-y-10">
         <MeetTheCast />
+        <Episodes />
+        <Locations />
       </section>
     </div>
   );

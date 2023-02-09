@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import CastCard from "../../Components/reusable/CastCard/CastCard";
 
@@ -30,7 +31,9 @@ const MeetTheCast = () => {
     <div className="container mx-auto">
       <div className="flex items-center justify-between">
         <h3>Meet The Cast</h3>
-        <button className="btn">View All</button>
+        <Link to="/cast">
+          <button className="btn">View All</button>
+        </Link>
       </div>
       <div>
         <Slider {...settings}>
