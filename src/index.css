@@ -6,6 +6,16 @@
   font-family: "TTTravels";
   src: url("../src/assets/fonts/TTTravels-Regular.ttf");
 }
+@font-face {
+  font-family: "TTTravels";
+  src: url("../src/assets/fonts/TTTravels-ExtraBold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "TTTravels";
+  src: url("../src/assets/fonts/TTTravels-Thin.ttf");
+}
 
 @layer base {
   body {

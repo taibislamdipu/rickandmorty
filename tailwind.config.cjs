@@ -17,6 +17,8 @@ module.exports = {
       },
       fontFamily: {
         bodyFont: ["TTTravels", "Sans Serif"],
+        heroFont: ["TTTravels", "Sans Serif"],
+        thinFont: ["TTTravels", "Sans Serif"],
       },
     },
   },

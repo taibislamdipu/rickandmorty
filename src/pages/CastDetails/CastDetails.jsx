@@ -84,7 +84,7 @@ const CastDetails = () => {
               <div>
                 <img className="w-10" src={statusImg} alt="statusImg" />
               </div>
-              <h4>Status</h4>
+              <h4 className="font-thinFont">Status</h4>
               <h2 className="font-bold">{status}</h2>
             </div>
 
@@ -92,14 +92,14 @@ const CastDetails = () => {
               <div>
                 <img className="w-10" src={speciesImg} alt="speciesImg" />
               </div>
-              <h4>Species</h4>
+              <h4 className="font-thinFont">Species</h4>
               <h2 className="font-bold">{species}</h2>
             </div>
             <div className="bg-blur col-span-1 rounded-lg border border-green-400 px-4 py-1">
               <div>
                 <img className="w-10" src={genderImg} alt="genderImg" />
               </div>
-              <h4>Gender</h4>
+              <h4 className="font-thinFont">Gender</h4>
               <h2 className="font-bold">{gender}</h2>
             </div>
 
@@ -107,7 +107,7 @@ const CastDetails = () => {
               <div>
                 <img className="w-10" src={originImg} alt="originImg" />
               </div>
-              <h4>Origin</h4>
+              <h4 className="font-thinFont">Origin</h4>
               <div className="flex items-center justify-between">
                 <h2 className="font-bold">{origin?.name}</h2>
                 <span>
@@ -120,7 +120,7 @@ const CastDetails = () => {
               <div>
                 <img className="w-10" src={locationImg} alt="locationImg" />
               </div>
-              <h4>Last Known Location</h4>
+              <h4 className="font-thinFont">Last Known Location</h4>
               <div className="flex items-center justify-between">
                 <h2 className="font-bold">{location?.name}</h2>
                 <span>
@@ -133,7 +133,7 @@ const CastDetails = () => {
               <div>
                 <img className="w-10" src={statusImg} alt="statusImg" />
               </div>
-              <h4 className="mb-3">Episode(S)</h4>
+              <h4 className="mb-3 font-thinFont">Episode(S)</h4>
               <div>
                 {episodeNames.length > 5 ? (
                   <div
