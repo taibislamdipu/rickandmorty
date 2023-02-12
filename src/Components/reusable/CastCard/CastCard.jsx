@@ -5,7 +5,10 @@ const CastCard = ({ cast }) => {
   return (
     <div className="cast-card">
       <div className="cast-card-content p-4">
-        <img src={image} className="h-56 w-full rounded-md object-cover" />
+        <img
+          src={image}
+          className="h-40 w-full rounded-md object-cover md:h-56"
+        />
         <h4 className="mt-2">{name}</h4>
       </div>
     </div>

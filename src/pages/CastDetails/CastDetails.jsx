@@ -60,14 +60,16 @@ const CastDetails = () => {
     <div className="castDetails-container h-fit pb-40">
       <Navbar />
       <div>{isLoading && <Loading />}</div>
-      <main className="castDetails-inner container mx-auto grid grid-cols-2 gap-10">
+      <main className="castDetails-inner container mx-auto grid-cols-2 gap-10 space-y-6 p-4 md:grid md:space-y-0">
         <div className="col-span-1 flex flex-col items-center justify-center">
           <h2 className="absolute left-0 -rotate-90 text-7xl font-bold text-[#1f273b]">
             {casts?.name}
           </h2>
 
-          <span>
-            <h3 className="text-[40px] text-thirdColor">{casts?.name}</h3>
+          <span className="space-y-6">
+            <h3 className="text-center font-bodyMedium text-[40px] font-bold text-thirdColor">
+              {casts?.name}
+            </h3>
             <div className="bg-blur h-72 w-72 rounded-lg border border-green-400 p-8">
               <img
                 className="rounded-lg"

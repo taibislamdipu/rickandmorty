@@ -56,17 +56,16 @@ const Episodes = () => {
   });
 
   return (
-    <div className="mx-4 space-y-4 md:mx-20">
+    <div className="mx-10 space-y-4 md:mx-20">
       <h3>Episodes</h3>
+
       <Slider {...sliderSettings}>
         {episodes.map((episode) => (
-          <div>
-            <div key={episode?.id}>
-              <div className="shape">
-                <div className="text-content p-4">
-                  <h5>{episode?.episode}</h5>
-                  <h4 className="font-bold">{episode?.name}</h4>
-                </div>
+          <div key={episode?.id}>
+            <div className="shape">
+              <div className="text-content p-4">
+                <h5>{episode?.episode}</h5>
+                <h4 className="font-bold">{episode?.name}</h4>
               </div>
             </div>
           </div>

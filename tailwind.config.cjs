@@ -11,7 +11,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#191D29",
+        primary: "#2A3E84",
         secondary: "#9DFE00",
         thirdColor: "#14D9E5",
       },
@@ -19,6 +19,7 @@ module.exports = {
         bodyFont: ["TTTravels", "Sans Serif"],
         heroFont: ["TTTravels", "Sans Serif"],
         thinFont: ["TTTravels", "Sans Serif"],
+        bodyMedium: ["TTTravels", "Sans Serif"],
       },
     },
   },
