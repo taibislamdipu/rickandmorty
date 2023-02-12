@@ -22,8 +22,8 @@ const Cast = () => {
   return (
     <div className="cast-container h-fit pb-40">
       <Navbar />
-      <main className="container mx-auto">
-        <h2>The Cast</h2>
+      <main className="container mx-auto space-y-4">
+        <h2 className="text-4xl text-thirdColor">The Cast</h2>
         <div className="grid grid-cols-2 gap-y-4 md:grid-cols-4">
           {casts.map((cast) => (
             <Link to={`/cast-details/${cast?.id}`}>
