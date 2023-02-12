@@ -52,7 +52,9 @@ const MeetTheCast = () => {
       <div className="flex items-center justify-between">
         <h3>Meet The Cast</h3>
         <Link to="/cast">
-          <button className="btn">View All</button>
+          <button className="border-gradient-to-r rounded-md border-2 border-solid border-green-400 from-secondary to-thirdColor px-4 py-2 transition hover:bg-gradient-to-r hover:text-black">
+            View All
+          </button>
         </Link>
       </div>
       <div>
