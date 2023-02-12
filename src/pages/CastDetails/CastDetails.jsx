@@ -52,35 +52,35 @@ const CastDetails = () => {
   }, []);
 
   return (
-    <div className="castDetails-container h-screen">
+    <div className="castDetails-container h-fit">
       <Navbar />
       <div>{isLoading && <Loading />}</div>
       <main className="container mx-auto grid grid-cols-2 gap-10">
         <div className="col-span-1 flex flex-col items-center justify-center">
           <h3 className="text-[40px] text-thirdColor">{casts?.name}</h3>
           <h3>{episodeNames.length}</h3>
-          <div className="h-72 w-72 rounded-lg border border-green-400 bg-blur p-9">
+          <div className="bg-blur h-72 w-72 rounded-lg border border-green-400 p-9">
             <img className="rounded-lg" src={casts?.image} alt={casts?.name} />
           </div>
         </div>
 
         <div className="col-span-1">
           <div className="grid grid-cols-3 gap-6">
-            <div className="col-span-1 rounded-lg border border-green-400 bg-blur px-4 py-2">
+            <div className="bg-blur col-span-1 rounded-lg border border-green-400 px-4 py-2">
               <div>
                 <img src={statusImg} alt="statusImg" />
               </div>
               <h4>Status</h4>
               <h2 className="font-bold">{status}</h2>
             </div>
-            <div className="col-span-1 rounded-lg border border-green-400 bg-blur px-4 py-2">
+            <div className="bg-blur col-span-1 rounded-lg border border-green-400 px-4 py-2">
               <div>
                 <img src={statusImg} alt="statusImg" />
               </div>
               <h4>Status</h4>
               <h2 className="font-bold">{status}</h2>
             </div>
-            <div className="col-span-1 rounded-lg border border-green-400 bg-blur px-4 py-2">
+            <div className="bg-blur col-span-1 rounded-lg border border-green-400 px-4 py-2">
               <div>
                 <img src={statusImg} alt="statusImg" />
               </div>
@@ -88,7 +88,7 @@ const CastDetails = () => {
               <h2 className="font-bold">{status}</h2>
             </div>
 
-            <div className="col-span-3 rounded-lg border border-green-400 bg-blur px-4 py-2">
+            <div className="bg-blur col-span-3 rounded-lg border border-green-400 px-4 py-2">
               <div>
                 <img src={statusImg} alt="statusImg" />
               </div>
@@ -101,7 +101,7 @@ const CastDetails = () => {
               </div>
             </div>
 
-            <div className="col-span-3 rounded-lg border border-green-400 bg-blur px-4 py-2">
+            <div className="bg-blur col-span-3 rounded-lg border border-green-400 px-4 py-2">
               <div>
                 <img src={statusImg} alt="statusImg" />
               </div>
@@ -114,7 +114,7 @@ const CastDetails = () => {
               </div>
             </div>
 
-            <div className="col-span-3 rounded-lg border border-green-400 bg-blur px-4 py-2">
+            <div className="bg-blur col-span-3 rounded-lg border border-green-400 px-4 py-2">
               <div>
                 <img src={statusImg} alt="statusImg" />
               </div>
