@@ -12,29 +12,19 @@ const Home = () => {
   return (
     <div className="home-container h-max">
       <Navbar />
-      <section className="text-center">
-        {/* <div className="testb relative w-fit">
-          <img className="absolute top-0 left-0" src={bubble} alt="" />
-          <h1 className="ml-52 italic">The</h1>
-        </div> */}
-
+      <section className="">
         <h1 className="text-container testb container mx-auto flex flex-wrap items-center justify-center gap-2 font-bodyFont">
-          <span className="text uppercase italic" />
-          <img src={portal} alt="" />
-          <span className="bg-gradient-to-r from-secondary to-thirdColor bg-clip-text uppercase text-transparent">
-            Rick &
+          <span className="text neonText uppercase italic" />
+          <img src={portal} alt="" className="neonText" />
+          <span className="neonText bg-gradient-to-r from-secondary to-thirdColor bg-clip-text uppercase text-transparent">
+            Rick <span className="and" />
           </span>
           <span className="bg-gradient-to-r from-secondary to-thirdColor bg-clip-text uppercase text-transparent">
             Morty
           </span>
           <span className="italic">Wiki</span>
         </h1>
-
-        {/* <h1 className="hero-text font-bodyFont uppercase">
-          <span className="top-left testb italic">The</span>
-          <img src={portal} alt="portal" />
-          Rick & Morty <span className="italic">Wiki</span>
-        </h1> */}
+        <span></span>
 
         <div className="flex justify-center gap-2">
           <button className="btn">Watch Now</button>

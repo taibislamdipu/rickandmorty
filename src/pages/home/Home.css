@@ -5,17 +5,28 @@
   background-size: cover;
 }
 
-/* .top-left {
-  background-image: url("../../assets/home-page/hero-elements/bubble.png");
-  background-position: center;
-} */
+.and::before {
+  content: "&";
+  background-image: url("../../assets/home-page/hero-elements/pill.png");
+  background-repeat: no-repeat;
+  /* padding-left: 80px; */
+}
+
+.neonText {
+  color: #fff;
+  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #9dfe00,
+    0 0 1px #9dfe00, 0 0 1px #9dfe00, 0 0 80px #9dfe00, 0 0 151px #9dfe00;
+}
+
+.text-container {
+  background-image: url("../../assets/home-page/hero-elements/gun.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
 
 .text::before {
   content: "The";
   background-image: url("../../assets/home-page/hero-elements/bubble.png");
   background-repeat: no-repeat;
   padding-left: 80px;
-}
-.portal::after {
-  content: "sssss";
 }
