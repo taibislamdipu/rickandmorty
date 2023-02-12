@@ -59,7 +59,7 @@ const CastDetails = () => {
         <div className="col-span-1 flex flex-col items-center justify-center">
           <h3 className="text-[40px] text-thirdColor">{casts?.name}</h3>
           <h3>{episodeNames.length}</h3>
-          <div className="bg-blur gradient-border h-72 w-72 rounded-lg border p-16">
+          <div className="bg-blur h-72 w-72 rounded-lg border p-16">
             <img className="rounded-lg" src={casts?.image} alt={casts?.name} />
           </div>
         </div>

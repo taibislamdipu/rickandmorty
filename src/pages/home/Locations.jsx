@@ -51,9 +51,11 @@ const Locations = () => {
       <Slider {...sliderSettings}>
         {locations.map((location) => (
           <div key={location?.id}>
-            <div className="episode-card rounded-xl border border-green-400 bg-blur p-6">
-              <h5>#{location?.id}</h5>
-              <h4 className="font-bold">{location?.name}</h4>
+            <div className="shape">
+              <div className="text-content p-4">
+                <h5>#{location?.id}</h5>
+                <h4 className="font-bold">{location?.name}</h4>
+              </div>
             </div>
           </div>
         ))}

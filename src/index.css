@@ -48,8 +48,76 @@
   @apply bg-gray-400 bg-opacity-10 bg-clip-padding p-4 backdrop-blur-sm backdrop-filter;
 }
 
-.gradient-border {
-  border-image-source: linear-gradient(to right, #84f729, #15bffd);
-  border-image-slice: 1;
-  border-radius: 8px !important;
+/* polygon shape cards style start  */
+.shape {
+  width: 300px;
+  height: 96px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.shape:before {
+  content: "";
+  border-radius: 10px;
+  width: 296px;
+  height: 92px;
+  background: linear-gradient(to right, #9dfe00, #14d9e5);
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+.shape,
+.shape:before {
+  -webkit-clip-path: polygon(100% 0, 100% 61%, 74% 100%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 61%, 74% 100%, 0 100%, 0 0);
+}
+
+.text-content {
+  background: #353541;
+  width: 293px;
+  height: 89px;
+  clip-path: polygon(100% 0, 100% 60%, 74% 100%, 0 100%, 0 0);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+}
+/* polygon shape cards style end */
+
+/* polygon shape cards style start - Meet The Cast  */
+
+.cast-card {
+  width: 290px;
+  height: 296px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cast-card:before {
+  content: "";
+  border-radius: 10px;
+  width: 290px;
+  height: 296px;
+  background: linear-gradient(to right, #9dfe00, #14d9e5);
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+.cast-card,
+.cast-card:before {
+  -webkit-clip-path: polygon(100% 0, 100% 85%, 75% 100%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 85%, 75% 100%, 0 100%, 0 0);
+}
+
+.cast-card-content {
+  background: #353541;
+  width: 286px;
+  height: 290px;
+  -webkit-clip-path: polygon(100% 0, 100% 85%, 75% 100%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 85%, 75% 100%, 0 100%, 0 0);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+}
+/* polygon shape cards style end - Meet The Cast */
