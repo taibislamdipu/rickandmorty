@@ -52,7 +52,7 @@ const CastDetails = () => {
   }, []);
 
   return (
-    <div className="castDetails-container h-fit">
+    <div className="castDetails-container h-fit pb-40">
       <Navbar />
       <div>{isLoading && <Loading />}</div>
       <main className="container mx-auto grid grid-cols-2 gap-10">

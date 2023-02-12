@@ -20,11 +20,11 @@ const Cast = () => {
   }, []);
 
   return (
-    <div className="cast-container testb h-fit">
+    <div className="cast-container testb h-fit pb-40">
       <Navbar />
       <main className="container mx-auto">
         <h2>The Cast</h2>
-        <div className="testb grid grid-cols-4 gap-4">
+        <div className="testb grid grid-cols-4 gap-y-4">
           {casts.map((cast) => (
             <Link to={`/cast-details/${cast?.id}`}>
               <CastCard key={cast?.id} cast={cast} />
