@@ -15,10 +15,12 @@
 @font-face {
   font-family: "TTTravels";
   src: url("../src/assets/fonts/TTTravels-Thin.ttf");
+  font-weight: 400;
 }
 @font-face {
   font-family: "TTTravels";
   src: url("../src/assets/fonts/TTTravels-Medium.ttf");
+  font-weight: 700;
 }
 
 @layer base {

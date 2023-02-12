@@ -87,7 +87,7 @@ const CastDetails = () => {
                 <img className="w-10" src={statusImg} alt="statusImg" />
               </div>
               <h4 className="font-thinFont">Status</h4>
-              <h2 className="font-bold">{status}</h2>
+              <h2 className="font-bodyMedium font-bold">{status}</h2>
             </div>
 
             <div className="bg-blur col-span-1 rounded-lg border border-green-400 px-4 py-1">
@@ -95,14 +95,14 @@ const CastDetails = () => {
                 <img className="w-10" src={speciesImg} alt="speciesImg" />
               </div>
               <h4 className="font-thinFont">Species</h4>
-              <h2 className="font-bold">{species}</h2>
+              <h2 className="font-bodyMedium font-bold">{species}</h2>
             </div>
             <div className="bg-blur col-span-1 rounded-lg border border-green-400 px-4 py-1">
               <div>
                 <img className="w-10" src={genderImg} alt="genderImg" />
               </div>
               <h4 className="font-thinFont">Gender</h4>
-              <h2 className="font-bold">{gender}</h2>
+              <h2 className="font-bodyMedium font-bold">{gender}</h2>
             </div>
 
             <div className="bg-blur col-span-3 rounded-lg border border-green-400 px-4 py-2">
@@ -111,7 +111,7 @@ const CastDetails = () => {
               </div>
               <h4 className="font-thinFont">Origin</h4>
               <div className="flex items-center justify-between">
-                <h2 className="font-bold">{origin?.name}</h2>
+                <h2 className="font-bodyMedium font-bold">{origin?.name}</h2>
                 <span>
                   <BiLinkExternal size={23} color="white" />
                 </span>
@@ -124,7 +124,7 @@ const CastDetails = () => {
               </div>
               <h4 className="font-thinFont">Last Known Location</h4>
               <div className="flex items-center justify-between">
-                <h2 className="font-bold">{location?.name}</h2>
+                <h2 className="font-bodyMedium font-bold">{location?.name}</h2>
                 <span>
                   <BiLinkExternal size={23} color="white" />
                 </span>
@@ -147,7 +147,10 @@ const CastDetails = () => {
                     <div className="ml-8">
                       <ul className="list-disc">
                         {episodeNames.map((name, index) => (
-                          <li className="text-2xl" key={index}>
+                          <li
+                            className="font-bodyMedium text-2xl font-bold"
+                            key={index}
+                          >
                             {name}
                           </li>
                         ))}
@@ -158,7 +161,10 @@ const CastDetails = () => {
                   <div className="ml-8">
                     <ul className="list-disc">
                       {episodeNames.map((name, index) => (
-                        <li className="text-xl" key={index}>
+                        <li
+                          className="font-bodyMedium text-xl font-bold"
+                          key={index}
+                        >
                           {name}
                         </li>
                       ))}
