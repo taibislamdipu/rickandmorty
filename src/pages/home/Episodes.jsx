@@ -62,7 +62,7 @@ const Episodes = () => {
         {episodes.map((episode) => (
           <div>
             <div key={episode?.id}>
-              <div className="episode-card rounded-xl border border-green-400 bg-blur p-6">
+              <div className="episode-card bg-blur rounded-xl border border-green-400 p-6">
                 <h5>{episode?.episode}</h5>
                 <h4 className="font-bold">{episode?.name}</h4>
               </div>
