@@ -22,11 +22,11 @@ const Cast = () => {
   return (
     <div className="cast-container h-fit pb-40">
       <Navbar />
-      <main className="container mx-auto space-y-4 p-4">
+      <main className="mx-10 space-y-4 md:mx-20">
         <h2 className="text-2xl font-bold text-thirdColor md:text-4xl">
           The Cast
         </h2>
-        <div className="grid grid-cols-2 justify-items-center gap-y-4 md:grid-cols-4">
+        <div className="grid grid-cols-2 justify-items-center gap-4 md:grid-cols-5">
           {casts.map((cast) => (
             <Link to={`/cast-details/${cast?.id}`}>
               <CastCard key={cast?.id} cast={cast} />
