@@ -31,7 +31,11 @@ const Home = () => {
                 grandson, Morty, for wild escapades in other worlds and
                 alternate dimensions.
               </p>
-              <a href="https://youtu.be/KQ9Cgdsa9tc" target="_blank">
+              <a
+                href="https://youtu.be/KQ9Cgdsa9tc"
+                target="_blank"
+                className="inline-block"
+              >
                 <button className="btn gap-4 rounded-full bg-gradient-to-r from-secondary to-thirdColor">
                   <AiFillPlayCircle size={23} />
                   Watch Now
