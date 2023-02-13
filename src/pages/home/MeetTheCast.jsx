@@ -50,8 +50,8 @@ const MeetTheCast = () => {
   }, []);
 
   return (
-    <div className="space-y-8 md:space-y-4">
-      <div className="mx-10 flex items-center justify-between md:mx-20">
+    <div className="mx-10 space-y-4 md:mx-20">
+      <div className=" flex items-center justify-between ">
         <h3>Meet The Cast</h3>
         <Link to="/cast">
           <button className="border-gradient-to-r rounded-md border-2 border-solid border-green-400 from-secondary to-thirdColor px-4 py-2 transition hover:bg-gradient-to-r hover:text-black">
@@ -59,7 +59,7 @@ const MeetTheCast = () => {
           </button>
         </Link>
       </div>
-      <div className="mx-10 md:mx-20">
+      <div className="">
         <Slider {...sliderSettings}>
           {casts.map((cast) => (
             <CastCard key={cast?.id} cast={cast} />
