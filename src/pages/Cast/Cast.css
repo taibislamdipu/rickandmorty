@@ -1,6 +1,6 @@
 .cast-container {
   background-image: url("../../assets/cast/cast-bg.png");
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  /* background-size: cover; */
 }
