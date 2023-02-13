@@ -3,9 +3,11 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import CastCard from "../../Components/reusable/CastCard/CastCard";
+import Loading from "../../Components/reusable/Loading";
 
 const MeetTheCast = () => {
   const [casts, setCasts] = useState([]);
+  const [isLoading, setLoading] = useState(true);
 
   const [sliderSettings, setSliderSettings] = useState({
     slidesToShow: 4.5,
@@ -43,6 +45,7 @@ const MeetTheCast = () => {
       .get("https://rickandmortyapi.com/api/character")
       .then((res) => {
         setCasts(res?.data?.results);
+        setLoading(false);
       })
       .catch((err) => {
         console.error(err);
@@ -59,6 +62,7 @@ const MeetTheCast = () => {
           </button>
         </Link>
       </div>
+      {isLoading && <Loading />}
       <div className="">
         <Slider {...sliderSettings}>
           {casts.map((cast) => (

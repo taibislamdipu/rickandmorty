@@ -62,7 +62,7 @@ const CastDetails = () => {
       <div>{isLoading && <Loading />}</div>
       <main className="castDetails-inner container mx-auto grid-cols-2 gap-10 space-y-6 p-4 md:grid md:space-y-0">
         <div className="col-span-1 flex flex-col items-center justify-center">
-          <h2 className="absolute left-0 -rotate-90 text-7xl font-bold text-[#1f273b]">
+          <h2 className="invisible absolute left-0 -rotate-90 text-7xl font-bold text-[#1f273b] md:visible">
             {casts?.name}
           </h2>
 
