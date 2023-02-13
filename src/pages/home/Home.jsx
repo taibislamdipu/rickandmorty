@@ -46,14 +46,14 @@ const Home = () => {
               <span className="neonText the-text italic">The</span>
               <img src={portal} className="inline w-20 md:w-min" alt="" />
               <span className="hero-gradient-text">
-                Rick &
+                Rick <span className="and"></span>
                 <br />
                 Morty
               </span>
               <span className="italic">Wiki</span>
             </h1>
-            <div className="flex-row-reverse items-center justify-center space-y-4 md:flex md:space-y-0">
-              <p className="max-w-md text-thirdColor">
+            <div className="flex-row-reverse items-center justify-center space-y-4 md:flex md:gap-10 md:space-x-4 md:space-y-0">
+              <p className="max-w-md text-start text-thirdColor">
                 Brilliant but boozy scientist Rick hijacks his fretful teenage
                 grandson, Morty, for wild escapades in other worlds and
                 alternate dimensions.

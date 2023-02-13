@@ -5,13 +5,6 @@
   /* background-size: cover; */
 }
 
-.and::before {
-  content: "&";
-  background-image: url("../../assets/home-page/hero-elements/pill.png");
-  background-repeat: no-repeat;
-  /* padding-left: 80px; */
-}
-
 .neonText {
   color: #fff;
   text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #fff, 0 0 1px #9dfe00,
@@ -61,4 +54,18 @@
   content: "The";
   background-image: url("../../assets/home-page/hero-elements/bubble.png");
   background-repeat: no-repeat;
+}
+
+@media (max-width: 844px) {
+  .and::before {
+    content: "&";
+  }
+}
+
+@media (min-width: 884px) {
+  .and::before {
+    content: "&";
+    background-image: url("../../assets/home-page/hero-elements/pill.png");
+    background-repeat: no-repeat;
+  }
 }
