@@ -5,11 +5,13 @@
 @font-face {
   font-family: "TTTravels";
   src: url("../src/assets/fonts/TTTravels-Regular.ttf");
+  font-weight: 400;
 }
+
 @font-face {
   font-family: "TTTravels";
   src: url("../src/assets/fonts/TTTravels-ExtraBold.ttf");
-  font-weight: 700;
+  font-weight: 900;
 }
 
 @font-face {
@@ -31,6 +33,7 @@
   h1 {
     @apply text-[40px] font-bold md:text-[128px];
   }
+
   h2 {
     @apply text-[20px] md:text-[24px];
   }
