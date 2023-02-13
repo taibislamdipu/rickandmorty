@@ -41,3 +41,24 @@
   background-position: right;
   background-repeat: no-repeat;
 }
+
+/* ======================== */
+
+/* .hero-text-container {
+  background-image: url("../../assets/home-page/hero-elements/gun.png");
+  background-position: right;
+  background-repeat: no-repeat;
+} */
+
+.hero-gradient-text {
+  background: #9dfe00;
+  background: linear-gradient(to right, #9dfe00 0%, #14d9e5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.the-text {
+  content: "The";
+  background-image: url("../../assets/home-page/hero-elements/bubble.png");
+  background-repeat: no-repeat;
+}
