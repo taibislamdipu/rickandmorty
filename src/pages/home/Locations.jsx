@@ -19,9 +19,7 @@ const Locations = () => {
   const [sliderSettings, setSliderSettings] = useState({
     slidesToShow: 4.5,
     slidesToScroll: 4,
-    infinite: false,
-    initialSlide: 0,
-    // dots: true,
+    initialSlide: 4.5,
     arrows: true,
     responsive: [
       {
@@ -31,15 +29,17 @@ const Locations = () => {
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 844,
         settings: {
-          slidesToShow: 2.5,
+          slidesToShow: 1.5,
+          slidesToScroll: 2,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 390,
         settings: {
           slidesToShow: 1.5,
+          slidesToScroll: 2,
         },
       },
     ],

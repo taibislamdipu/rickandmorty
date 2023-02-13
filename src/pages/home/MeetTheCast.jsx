@@ -12,9 +12,9 @@ const MeetTheCast = () => {
   const [sliderSettings, setSliderSettings] = useState({
     slidesToShow: 4.5,
     slidesToScroll: 4,
-    infinite: false,
-    initialSlide: 0,
-    // dots: true,
+    initialSlide: 4.5,
+    infinite: true,
+    autoplay: true,
     arrows: true,
     responsive: [
       {
